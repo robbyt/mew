@@ -4,7 +4,7 @@ import subprocess
 import timeit
 import time
 
-MEW = './mew_nosum_precise_x64.bin'
+MEW = 'bin/mew_nosum_precise_x64.bin'
 
 DATA_TARGETS = [
     64*1024,
