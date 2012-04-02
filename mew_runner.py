@@ -18,7 +18,7 @@ DATA_TARGETS = [
     64*1024*256,
 ]
 #SKIPS = [1, 2, 4, 8, 16, 32, 64, 128, 256]
-SKIPS = range(1,513)
+SKIPS = range(1,769)
 
 MULTI = 3
 REPEAT = 100
