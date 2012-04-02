@@ -1,4 +1,4 @@
-# mew? 
+# Overview
 The core of this project is to test CPU cache locality by creating a large
 list of ints, but only multiplying every n'th member. For a much more 
 in-depth article about what I'm trying to test, see:    
@@ -34,3 +34,10 @@ conditions, and then writes the average runtime to a .csv file for each
 condition. Load this up in Excel, and you can make some nice graphs that show 
 some pretty interesting things about the speed of your processor, and the size
 of it's cache. 
+
+# So what about the name, mew? 
+Short for `Multiplexer`
+
+http://en.wikipedia.org/wiki/Multiplexer
+
+
