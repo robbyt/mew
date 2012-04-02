@@ -4,8 +4,7 @@ import subprocess
 import timeit
 import time
 
-#MEW = '/Volumes/raid/UserData/Dropbox/research/python/v_csh/homework/1/mew/mew-c'
-MEW = './mew_nosum-c'
+MEW = './mew_nosum_precise_x64.bin'
 
 DATA_TARGETS = [
     64*1024,
