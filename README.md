@@ -2,6 +2,7 @@
 The core of this project is to test CPU cache locality by creating a large
 list of ints, but only multiplying every n'th member. For a much more 
 in-depth article about what I'm trying to test, see:    
+
 http://igoro.com/archive/gallery-of-processor-cache-effects/
 
 # mew.py
@@ -16,13 +17,15 @@ compile my python code down to C-bytecode using the amazing new pypy
 translate.py jit compiler.
 
 See this gist for a performance comparison between pure python, and pypy:
+
 https://gist.github.com/2253894
 
 ## Pypy
 So the cool thing about Pypy, is that you can compile your Python code with
-the pypy translator, as long as you write your python code in "C compatible".
+the pypy translator, as long as you write your python code "C compatible".
 
 Watch David Beazley's Pycon 2012 keynote for a really great overview of Pypy
+
 http://pyvideo.org/video/659/keynote-david-beazley
 
 # mew runner.py
