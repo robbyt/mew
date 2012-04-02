@@ -28,6 +28,12 @@ Watch David Beazley's Pycon 2012 keynote for a really great overview of Pypy
 
 http://pyvideo.org/video/659/keynote-david-beazley
 
+## Building mew.py
+* Download the Pypy source (1.8, as of today) https://bitbucket.org/pypy/pypy/get/release-1.8.tar.bz2
+* Expand this somewhere, I put it under ~/bin/pypy
+* Run the translate.py app against the mew.py file with -Ojit
+`~/bin/pypy/pypy-pypy-2346207d9946/pypy/translator/goal/translate.py mew_sum.py`
+
 # mew runner.py
 So what does this thing do? It runs the mew-c program with several different 
 conditions, and then writes the average runtime to a .csv file for each
