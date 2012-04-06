@@ -14,11 +14,22 @@ I decided to write the test in python instead. However, running this test in
 pure python was very slow. So I compiled mew.py with the pypy jit translator.
 (read below for more information about pypy)
 
+### How to run mew.py:
+`./mew.py <amount of data to generate> <number of items to skip> <number to * by>`
+So for example, if we want to create a list of 128 numbers, and multiply every 
+16th number in that list by 3:
+`./mew.py 128 16 3`
+
+However, Python is slower than than C. There are some pre-compiled binaries
+included in the `bin` directory. (compiled for OSX Lion x64, Ubuntu 12.04 x64)
+
 ## mew_runner.py
 So what does this thing do? It runs the mew-c program with several different 
 conditions, and then writes the average runtime to a .csv file for each
 condition. Running `mew_runner.py` will make your CPU hot, and create a 
 file called out.csv each time you run it. 
+
+
 
 ## plot.py
 The plot.py program will read the .csv files that `mew_runner.py` creates 
