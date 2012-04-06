@@ -73,7 +73,8 @@ http://pyvideo.org/video/659/keynote-david-beazley
 ## Building mew.py with pypy
 * Download the Pypy source (1.8, as of today) https://bitbucket.org/pypy/pypy/get/release-1.8.tar.bz2
 * Expand this somewhere, I put it under ~/bin/pypy
-* Run the translate.py app against the mew.py file with -Ojit
-`python ~/bin/pypy/pypy-pypy-2346207d9946/pypy/translator/goal/translate.py mew_sum.py`
+* Run the translate.py app against the mew.py file with:
+
+`python ~/bin/pypy/pypy-pypy-2346207d9946/pypy/translator/goal/translate.py mew_sum.py -Ojit`
 
 
