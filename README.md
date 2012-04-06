@@ -56,7 +56,7 @@ To get interesting results, try creating data sets that are smaller than your
 CPU L2 cache, and larger, and then compare different skip sizes for each.
 
 ## CPU Benchmarking in Python? 
-The problem with python, is that it can be much slower than C. So I decided to
+The problem with python, is that it can be much slower than C. I decided to
 compile my python code down to C-bytecode using the amazing new pypy
 translate.py jit compiler.
 
@@ -65,11 +65,11 @@ See this gist for a performance comparison between pure python, and pypy:
 https://gist.github.com/2253894
 
 ## Pypy
-So the cool thing about Pypy, is that you can compile your Python code with
-the pypy translator, as long as you write your python code "C compatible".
+Using the Pypy jit translator allows you to compile your Python code down
+to raw, compiled C code as long as you write your python code "C compatible".
+See: http://doc.pypy.org/en/latest/coding-guide.html
 
 Watch David Beazley's Pycon 2012 keynote for a really great overview of Pypy
-
 http://pyvideo.org/video/659/keynote-david-beazley
 
 ## Building mew.py with pypy
