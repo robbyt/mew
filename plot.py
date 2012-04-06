@@ -10,6 +10,8 @@ import numpy as np
 
 import csv
 
+LOG_X = True
+
 _bad_colors = ['oldlace',
                'whitesmoke',
                'lightsteelblue', 
@@ -86,7 +88,8 @@ def chart_it(csv_r, chart_name='mew', color='red', point_size=0.5):
 
         ax.legend()
         ax.set_xlim(left=0,right=800)
-        ax.set_xscale('log')
+        if LOG_X:
+            ax.set_xscale('log')
         canvas.print_figure(i[1] + ".png", dpi=300)
 
 
