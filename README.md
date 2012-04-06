@@ -50,6 +50,11 @@ as args: `python plot.py run1.csv run2.csv`.
 Short for `Multiplexer`
 http://en.wikipedia.org/wiki/Multiplexer
 
+## How much data should I create?
+I estimate that a list of 65536 numbers requires about 2097224 bytes of RAM (~2MB).
+To get interesting results, try creating data sets that are smaller than your
+CPU L2 cache, and larger, and then compare different skip sizes for each.
+
 ## CPU Benchmarking in Python? 
 The problem with python, is that it can be much slower than C. So I decided to
 compile my python code down to C-bytecode using the amazing new pypy
