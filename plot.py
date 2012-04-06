@@ -78,7 +78,6 @@ def chart_it(csv_r, chart_name='mew', color='red', point_size=0.5):
         time = np.float64(a[:,2])
         c = COLORS.pop()
         print c
-        print dir(a[:,1])
         ax.scatter(skips, 
                    time,
                    s=point_size,
