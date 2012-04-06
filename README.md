@@ -16,12 +16,21 @@ pure python was very slow. So I compiled mew.py with the pypy jit translator.
 
 ### How to run mew.py:
 `./mew.py <amount of data to generate> <number of items to skip> <number to * by>`
-So for example, if we want to create a list of 128 numbers, and multiply every 
+
+For example, if we want to create a list of 128 numbers, and multiply every 
 16th number in that list by 3:
+
 `./mew.py 128 16 3`
 
 However, Python is slower than than C. There are some pre-compiled binaries
 included in the `bin` directory. (compiled for OSX Lion x64, Ubuntu 12.04 x64)
+Running those binaries is the same as the Python version, but returns results
+about 100x faster.
+
+```
+cd bin
+./mew_nosum_osx.bin 128 16 3
+```
 
 ## mew_runner.py
 So what does this thing do? It runs the mew-c program with several different 
