@@ -22,7 +22,7 @@ For example, if we want to create a list of 128 numbers, and multiply every
 
 `./mew.py 128 16 3`
 
-However, Python is slower than than C. There are some pre-compiled binaries
+However, Python is slower than C. There are some pre-compiled binaries
 included in the `bin` directory. (compiled for OSX Lion x64, Ubuntu 12.04 x64)
 Running those binaries is the same as the Python version, but returns results
 about 100x faster.
