@@ -5,14 +5,9 @@ in-depth article about what I'm trying to test, see:
 
 http://igoro.com/archive/gallery-of-processor-cache-effects/
 
-# Components
-## mew.py
-I first started this experiment with C, a programming language that is not
-my strongest. Writing in C failed because I could not get dynamically sized
-lists to work. Some friends said "just use linked lists" or "use glib", but
-I decided to write the test in python instead.
+# mew.py
 
-### How to run mew.py:
+## How to run:
 `./mew.py <amount of data to generate> <number of items to skip> <number to * by>`
 
 For example, if we want to create a list of 128 numbers, and multiply every 
